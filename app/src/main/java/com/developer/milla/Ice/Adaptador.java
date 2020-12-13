@@ -1,4 +1,4 @@
-package com.developer.milla.guerrero;
+package com.developer.milla.Ice;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.developer.milla.guerrero.R;
 
 import java.util.List;
 

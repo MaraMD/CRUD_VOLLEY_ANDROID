@@ -1,10 +1,12 @@
-package com.developer.milla.guerrero;
+package com.developer.milla.Ice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.developer.milla.guerrero.R;
 
 public class DetalleslActivity extends AppCompatActivity {
 

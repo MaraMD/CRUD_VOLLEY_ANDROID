@@ -1,4 +1,4 @@
-package com.developer.milla.guerrero;
+package com.developer.milla.Ice;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.developer.milla.guerrero.R;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -87,7 +88,7 @@ public class Editar extends AppCompatActivity {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoibWFyYSIsImFnZSI6MTgsImVtYWlsIjoibWFyYUBwcnVlYmEuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkUEg1NDJhS3hkSE1weHdQSzNhMlpudS9sc1UxNFFYazZ6NWdVWW5STzBpT0g5Y3hqQ1ZsRHUifSwiaWF0IjoxNjA2ODg3ODQ4LCJleHAiOjE2MDcwNjA2NDh9.9B5r4Hp8nFM7PYyVDhJuQxfGOx75b_GuOCIg1s6IKQQ");
+                params.put("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxNywibmFtZSI6Im1hcmEiLCJhZ2UiOjEyMSwiZW1haWwiOiJtYXJhQHBydWViYS5jb20iLCJwYXNzd29yZCI6IiQyYiQxMCRCR3RNWDJ2LlE0WEdKSkFjd3RrR0kuRzBkNWlDYzVsMWgxbHBIWEdUL21LVzBpTzRGQWxteSJ9LCJpYXQiOjE2MDc1ODY1ODIsImV4cCI6MTYwNzc1OTM4Mn0.INpwMXJrEL3A1DhCiOzYLVC5P1YdMiUzUpbVro7eLc0");
                 return params;
             }
 

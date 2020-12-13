@@ -15,18 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".RegistroActivity"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Editar" />
-        <activity android:name=".DetalleslActivity" />
-        <activity android:name=".LoginActivity">
+        <activity
+            android:name="com.developer.milla.Ice.CompraGelato"
+            android:label="@string/title_activity_gelato"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.developer.milla.Ice.RegistroActivity" />
+        <activity android:name="com.developer.milla.Ice.MainActivity" />
+        <activity android:name="com.developer.milla.Ice.Editar" />
+        <activity android:name="com.developer.milla.Ice.DetalleslActivity" />
+        <activity android:name="com.developer.milla.Ice.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Agregar" />
+        <activity android:name="com.developer.milla.Ice.Agregar" />
     </application>
 
 </manifest>
