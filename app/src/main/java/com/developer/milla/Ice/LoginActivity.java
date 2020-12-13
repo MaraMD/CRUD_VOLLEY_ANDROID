@@ -83,7 +83,11 @@ public class LoginActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
+                //Quitar este codigo
                 Toast.makeText(LoginActivity.this, error.toString(), Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
             }
         }){
             @Override

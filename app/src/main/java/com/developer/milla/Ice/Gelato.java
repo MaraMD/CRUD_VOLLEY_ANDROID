@@ -4,10 +4,10 @@ import java.io.Serializable;
 
 public class Gelato implements Serializable {
 
-    String idProducto;
-    String nomProducto;
-    String descripcion;
-    double precio;
+    String idProducto; //id
+    String nomProducto; // name
+    String descripcion; // foto
+    double precio; // precio
 
     public Gelato(String idProducto, String nomProducto, String descripcion, double precio) {
         this.idProducto = idProducto;

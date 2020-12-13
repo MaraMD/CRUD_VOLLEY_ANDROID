@@ -1,29 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5dp"
-    >
+    android:padding="5dp">
 
-    <TextView
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:id="@+id/txt_id"
-        android:text="1"
-        android:gravity="center_vertical|center"
-        android:textSize="20sp"
-        android:textColor="@android:color/white"
-        android:background="@drawable/circle"/>
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:id="@+id/txt_name"
-        android:text="Employee Name"
-        android:gravity="center_vertical"
-        android:textSize="20sp"
-        android:layout_marginLeft="10dp"
-        />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCommentRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="10dp"
+                    android:text="name"
+                    android:textSize="35sp"
+                    android:fontFamily="sans-serif-condensed-medium"/>
+                <TextView
+                    android:layout_below="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/sabor"
+                    android:text="Precio:"
+                    android:gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/precio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/name"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/sabor"
+                    android:layout_toRightOf="@+id/sabor"
+                    android:gravity="center_vertical"
+                    android:text="precio"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bodyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/infoLayout"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:id="@+id/heladoImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
 
 
 </LinearLayout>

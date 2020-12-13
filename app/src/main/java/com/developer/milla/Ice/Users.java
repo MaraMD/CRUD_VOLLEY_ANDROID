@@ -7,11 +7,11 @@ public class Users {
     }
 
     public Users(String id, String name, String email, String password, String age) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.age = age;
+        this.id = id;//id
+        this.name = name;//nombre helado
+        this.email = email;// Imagen del helado
+        this.password = password;// Precio
+        this.age = age;// sabor
     }
 
     public String getId() {
